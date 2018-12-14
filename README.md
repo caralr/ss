@@ -28,10 +28,12 @@ ss-wink/ss-wink.sh -i caralr.club 2333
 
 相关操作ssr命令
 
-启动：/etc/init.d/shadowsocks start
-停止：/etc/init.d/shadowsocks stop
-重启：/etc/init.d/shadowsocks restart
-状态：/etc/init.d/shadowsocks status
+启动：/etc/init.d/ss-wink start
+停止：/etc/init.d/ss-wink stop
+重启：/etc/init.d/ss-wink restart
+状态：/etc/init.d/ss-wink status
+查看ss链接：ss-wink/ss-wink.sh -sslink
+修改配置文件：vim /etc/shadowsocks.json
 
 配置文件路径：/etc/shadowsocks.json
 日志文件路径：/var/log/shadowsocks.log
