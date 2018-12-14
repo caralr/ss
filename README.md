@@ -21,15 +21,14 @@ git clone https://github.com/caralr/ss-wink
 
 Centos执行这个： yum -y install git
 Ubuntu/Debian执行这个： apt-get update && apt-get -y install git
-1
-2
-Centos执行这个： yum -y install git
-Ubuntu/Debian执行这个： apt-get update && apt-get -y install git
-2.运行搭建ss脚本代码
 
-
+运行搭建ss脚本代码
 ss-fly/ss-fly.sh -i caralr.club 2333
 
 其中caralr.club换成你要设置的shadowsocks的密码即可 
 这个caralr.club就是你ss的密码了，是需要填在客户端的密码那一栏的），密码随便设置，
 最好只包含字母+数字，一些特殊字符可能会导致冲突。而第二个参数2333是端口号，也可以不加，不加默认是2333
+
+卸载ss服务
+ss-fly/ss-fly.sh -uninstall
+
