@@ -8,14 +8,10 @@ Debian 7+
 Ubuntu 12+
 
 一键搭建shadowsocks
-在购买VPS并用Xshell连接上你刚购买的VPS后，你将看到如下图所示的界面：
-
-如红框中所示，root@vult（root@ubuntu）说明已经连接成功了，之后你只需要在绿色光标处直接复制以下代码就可以了（直接复制即可，如每段代码下方截图中所示）。
+git clone https://github.com/caralr/ss-wink
 
 1.下载一键搭建ss脚本文件（直接在绿色光标处复制该行命令回车即可，只需要执行一次，卸载ss后也不需要重新下载）
 
-
-git clone https://github.com/caralr/ss-wink
 
 如果提示bash: git: command not found，则先安装git：
 
