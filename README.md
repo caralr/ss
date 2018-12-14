@@ -14,7 +14,7 @@ Ubuntu 12+
 1.下载一键搭建ss脚本文件（直接在绿色光标处复制该行命令回车即可，只需要执行一次，卸载ss后也不需要重新下载）
 
 
-git clone https://github.com/flyzy2005/ss-wink
+git clone https://github.com/caralr/ss-wink
 
 如果提示bash: git: command not found，则先安装git：
 
