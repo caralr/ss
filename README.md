@@ -45,3 +45,7 @@ ss-wink/ss-wink.sh -i caralr.club 2333
 卸载ss服务
 ss-wink/ss-wink.sh -uninstall
 
+如果显示:-bash: ss-wink/ss-wink.sh: Permission denied
+请输入
+cd ss-wink
+chmod 777 ss-wink.sh
