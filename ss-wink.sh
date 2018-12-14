@@ -1,5 +1,5 @@
 #! /bin/bash
-# Copyright (c) 2018 flyzy小站
+# Copyright (c) 2018 caralr
 
 red='\033[0;31m'
 green='\033[0;32m'
@@ -7,7 +7,7 @@ yellow='\033[0;33m'
 plain='\033[0m'
 
 os='ossystem'
-password='flyzy2005.com'
+password='caralr.club'
 port='1024'
 libsodium_file="libsodium-1.0.16"
 libsodium_url="https://github.com/jedisct1/libsodium/releases/download/1.0.16/libsodium-1.0.16.tar.gz"
