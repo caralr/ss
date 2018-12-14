@@ -30,6 +30,18 @@ ss-wink/ss-wink.sh -i caralr.club 2333
 这个caralr.club就是你ss的密码了，是需要填在客户端的密码那一栏的），密码随便设置，
 最好只包含字母+数字，一些特殊字符可能会导致冲突。而第二个参数2333是端口号，也可以不加，不加默认是2333
 
+相关操作ssr命令
+
+启动：/etc/init.d/shadowsocks start
+停止：/etc/init.d/shadowsocks stop
+重启：/etc/init.d/shadowsocks restart
+状态：/etc/init.d/shadowsocks status
+
+配置文件路径：/etc/shadowsocks.json
+日志文件路径：/var/log/shadowsocks.log
+代码安装目录：/usr/local/shadowsocks
+
+
 卸载ss服务
 ss-wink/ss-wink.sh -uninstall
 
