@@ -11,13 +11,13 @@ port='1024'
 libsodium_file="libsodium-1.0.16"
 libsodium_url="https://github.com/jedisct1/libsodium/releases/download/1.0.16/libsodium-1.0.16.tar.gz"
 
-fly_dir="$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )"
+wink_dir="$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )"
 
 kernel_ubuntu_url="http://kernel.ubuntu.com/~kernel-ppa/mainline/v4.10.2/linux-image-4.10.2-041002-generic_4.10.2-041002.201703120131_amd64.deb"
 kernel_ubuntu_file="linux-image-4.10.2-041002-generic_4.10.2-041002.201703120131_amd64.deb"
 
 usage () {
-        cat $fly_dir/sshelp
+        cat $wink_dir/sshelp
 }
 
 DIR=`pwd`
@@ -69,10 +69,10 @@ uninstall_ss() {
                 fi
                 case $os in
                         'ubuntu'|'debian')
-                                update-rc.d -f ss-fly remove
+                                update-rc.d -f ss-wink remove
                                 ;;
                         'centos')
-                                chkconfig --del ss-fly
+                                chkconfig --del ss-wink
                                 ;;
                 esac
                 rm -f /etc/shadowsocks.json
@@ -425,15 +425,15 @@ install() {
         python setup.py install --record /usr/local/shadowsocks_install.log
         if [ -f /usr/bin/ssserver ] || [ -f /usr/local/bin/ssserver ]
         then 
-                cp $fly_dir/ss-fly /etc/init.d/
-                chmod +x /etc/init.d/ss-fly
+                cp $wink_dir/ss-wink /etc/init.d/
+                chmod +x /etc/init.d/ss-wink
                 case $os in
                         'ubuntu'|'debian')
                                 update-rc.d ss-fly defaults
                                 ;;
                         'centos')
-                                chkconfig --add ss-fly
-                                chkconfig ss-fly on
+                                chkconfig --add ss-wink
+                                chkconfig ss-wink on
                                 ;;
                 esac            
                 ssserver -c /etc/shadowsocks.json -d start
