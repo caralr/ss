@@ -46,4 +46,4 @@ ss-wink/ss-wink.sh -uninstall
 如果显示:-bash: ss-wink/ss-wink.sh: Permission denied
 请输入
 cd ss-wink
-chmod 777 ss-wink.sh
+chmod +x ss-wink.sh
