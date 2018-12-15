@@ -21,10 +21,16 @@ Ubuntu/Debian执行这个： apt-get update && apt-get -y install git
 
 
 2.cd ss-wink
+
+
 3.chmod +x ss-wink.sh
 
+
 运行搭建ss脚本代码
+
+
 4.ss-wink/ss-wink.sh -i caralr.club 2333
+
 
 其中caralr.club换成你要设置的shadowsocks的密码即可 
 这个caralr.club就是你ss的密码了，是需要填在客户端的密码那一栏的），密码随便设置，
