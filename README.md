@@ -8,9 +8,9 @@ Debian 7+
 Ubuntu 12+
 
 一键搭建shadowsocks
-git clone https://github.com/caralr/ss-wink
+1.git clone https://github.com/caralr/ss-wink
 
-1.下载一键搭建ss脚本文件（直接在绿色光标处复制该行命令回车即可，只需要执行一次，卸载ss后也不需要重新下载）
+下载一键搭建ss脚本文件（直接在绿色光标处复制该行命令回车即可，只需要执行一次，卸载ss后也不需要重新下载）
 
 
 如果提示bash: git: command not found，则先安装git：
@@ -19,8 +19,12 @@ git clone https://github.com/caralr/ss-wink
 Centos执行这个： yum -y install git
 Ubuntu/Debian执行这个： apt-get update && apt-get -y install git
 
+
+2.cd ss-wink
+3.chmod +x ss-wink.sh
+
 运行搭建ss脚本代码
-ss-wink/ss-wink.sh -i caralr.club 2333
+4.ss-wink/ss-wink.sh -i caralr.club 2333
 
 其中caralr.club换成你要设置的shadowsocks的密码即可 
 这个caralr.club就是你ss的密码了，是需要填在客户端的密码那一栏的），密码随便设置，
@@ -42,8 +46,3 @@ ss-wink/ss-wink.sh -i caralr.club 2333
 
 卸载ss服务
 ss-wink/ss-wink.sh -uninstall
-
-如果显示:-bash: ss-wink/ss-wink.sh: Permission denied
-请输入
-cd ss-wink
-chmod +x ss-wink.sh
