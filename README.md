@@ -20,6 +20,7 @@ Ubuntu 12+
 
 
 Centos执行这个： yum -y install git
+
 Ubuntu/Debian执行这个： apt-get update && apt-get -y install git
 
 
